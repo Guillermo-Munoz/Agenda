@@ -1,0 +1,116 @@
+:root {
+  --primari: #FBF2ED;
+  --secundari: #747779;
+  --tertiari: #b3b2b1;
+  --neutro: #B7BCBF;
+  --contraste: #CDD5C6;
+  --disable: #fb8342a5;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  height: 100hv;
+  background-color: var(--contraste);
+}
+
+*:first-letter {
+  text-transform: capitalize;
+}
+
+.app-ToDo {
+  border-radius: 8px;
+}
+
+.list {
+  margin: 25px auto;
+  padding: 25px;
+  background-color: var(--primari);
+  width: 100%;
+  max-width: 350px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date-left {
+  display: flex;
+  align-items: center;
+}
+
+#date-number {
+  font-size: 50px;
+}
+
+#date-text {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#month,
+#date-number,
+#date-text {
+  font-weight: bold;
+}
+
+#month,
+#year {
+  margin-left: 7px;
+  font-size: 20px;
+}
+
+form {
+  margin: 20px 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 35px auto;
+  grid-column-gap: 15px;
+}
+
+input {
+  border: none;
+  padding-left: 10px;
+  background-color: var(--neutro);
+}
+
+input:focus {
+  outline: none;
+}
+
+.addNewTaskButton,
+.order {
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addNewTaskButton {
+  height: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  background-color: var(--neutro);
+  cursor: pointer;
+}
+
+.order {
+  background-color: var(--neutro);
+  color: var(--secundari);
+}
+
+.task {
+  background-color: var(--contraste);
+  padding: 15px;
+  margin-top: 15px;
+  color: var(--secundari);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.done {
+  background-color: var(--secundari);
+  text-decoration: line-through;
+  color: var(--disable);
+}

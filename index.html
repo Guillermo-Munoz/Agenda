@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" type="text/javascript" defer></script>
+  <title>Lista de tareas</title>
+
+</head>
+
+<body>
+  <div class=" list app-ToDo">
+    <div class="date">
+      <div class="date-left">
+        <div id="date-number"></div>
+        <div>
+          <div id="month"></div>
+          <div id="year"></div>
+        </div>
+      </div>
+      <div id="date-text"></div>
+    </div>
+    <form onsubmit="addNewTask(event)">
+      <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="app-ToDo">
+      <button class="addNewTaskButton" type="submit">+</button>
+      <button type="button" class="order app-ToDo" onclick="renderOrder()">Ordenar</button>
+    </form>
+    <div id="tasksContainer"></div>
+  </div>
+</body>
+
+</html>
